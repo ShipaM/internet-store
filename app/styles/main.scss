@@ -1,0 +1,55 @@
+@import "_variables.scss";
+@import "_header.scss";
+@import "_section1.scss";
+@import "_section2.scss";
+@import "_section3.scss";
+@import "_section4.scss";
+@import "_section5.scss";
+@import "_section6.scss";
+@import "_section7.scss";
+@import "_section8.scss";
+@import "_section9.scss";
+@import "_section10.scss";
+@import "_section11.scss";
+@import "_section12.scss";
+@import "_footer.scss";
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $fontFamilyDosisregular;
+}
+
+p,
+span,
+li,
+a {
+	font-family: $fontFamilyOpensanslight;
+}
+
+.m-bottom-100 {
+    margin-bottom: 100px;
+}
+
+.m-bottom-80 {
+    margin-bottom: 80px;
+}
+
+.m-bottom-20 {
+    margin-bottom: 20px;
+}
+.w-65 {
+    width: 68%;
+}
+
+.mw-30 {
+    max-width: 29%;
+}
+
+
+
+@import "_media.scss";// всегда в конце

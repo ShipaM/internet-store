@@ -1,0 +1,49 @@
+// .header
+#header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 30px 20px;
+	.nav-item {
+  	margin-left: 30px;
+  }
+	.nav-link {
+    font-size: 11px;
+    color: $white;
+    font-family: $fontFamilyOpensansregular;
+	}
+	.navbar-toggler {
+    outline: none;
+    width: 30px;
+    padding: 0;
+  }
+	.navbar-toggler-icon {
+    background: white;
+    height: 2px;
+    position: relative;
+  	&:before,
+  	&:after {
+			content: '';
+    	background: white;
+    	height: 2px;
+    	position: absolute;
+    	width: 100%;
+    	left: 0;
+    }
+    &:before{
+    	top: -8px;
+    }
+		&:after{
+			bottom: -8px;
+		}
+	}
+}
+
+.navbar-light {
+	.navbar-toggler {
+  	border: none;
+	}
+}
+// header end

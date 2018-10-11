@@ -1,0 +1,36 @@
+//.section-1
+.section-1 {
+  height: 100vh;
+  background-image: url(../images/section1bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  h1 {
+    font-size: 30px;
+    letter-spacing: 50px;
+    text-indent: 50px;
+    color: $whitegray;
+    margin-bottom: 100px;
+	}
+	p {
+  font-size: 19px;
+  color: $whitegray;
+	}
+}
+.arrow-down {
+    width: 40px;
+    height: 40px;
+    background-color: $whitegray;
+    border-radius: 5px;
+    bottom: 30px;
+    transform: rotate(135deg);
+    cursor: pointer;
+	.fa-chevron-down {
+    -webkit-transform: rotate(135deg) translateX(7px);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg) translateY(7px);
+	}
+}
+//.section-1 end

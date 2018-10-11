@@ -1,0 +1,108 @@
+//.section-2
+.section-2 {
+  padding: 145px 0;
+  border-bottom: 1px solid $borderWhite;
+  &__cv {
+		h5 {
+    	font-family: $fontFamilyDosisregular;
+    	color: $white;
+    	font-size: $fontSize18;
+    	margin-bottom: 24px;
+    	letter-spacing: $letter-spacing;
+		}
+	}
+	&__cv { 
+		h6 {
+    	font-family: $fontFamilyOpensansregular;
+    	color: #c6c6c6;
+    	font-size: 11px;
+    	letter-spacing: 3px;
+		}
+	}
+  h3 {
+    font-size: $fontSize18;
+    letter-spacing: $letter-spacing;
+    color: $black;
+	}
+	.articles {
+		.col-lg-4 {
+			&>p {
+    		font-size: 15px;
+    		line-height: 25px;
+			}
+		}
+		.blockquote {
+			p {
+  			font-size: 24px;
+  			line-height: 35px;
+  			margin-bottom: 30px;
+  		}
+		}
+	}
+	.cv {
+		&__portfolio {
+    	margin-bottom: 30px;
+    	position: relative;
+    	cursor: pointer;
+    	&:hover {
+				.cv__skills {
+    			-webkit-transform: scale(1);
+    			-moz-transform: scale(1);
+    			-ms-transform: scale(1);
+    			-o-transform: scale(1);
+    			transform: scale(1);
+    		}
+    	} 
+    	.progress {
+  			height: 13px;
+  			background-color: #363636;
+  			border-radius: 0;
+			}
+    }
+		&__id {
+    	font-family: $fontFamilyDosisregular;
+    	font-size: 15px;
+    	margin-bottom: 8px;
+    	letter-spacing: $letter-spacing;
+		}
+		&__prof {
+    	font-family: $fontFamilyDosisregular;
+   		font-size: 12px;
+    	letter-spacing: 8px;
+		}
+		&__skills {
+    	background: #131313;
+    	position: absolute;
+    	top: 0;
+    	width: 100%;
+    	height: 100%;
+    	left: 0;
+    	padding: 38px;
+    	-webkit-transform: scale(0);
+    	-moz-transform: scale(0);
+    	-ms-transform: scale(0);
+    	-o-transform: scale(0);
+    	transform: scale(0);
+    	-webkit-transition: all .5s;
+    	-moz-transition: all .5s;
+    	-ms-transition: all .5s;
+    	-o-transition: all .5s;
+    	transition: all .5s;
+		}	
+	}
+	.skills{
+		&__descr {
+    	font-family: $fontFamilyOpensansregular;
+    	color: #a7a7a7;
+    	font-size: 13px;
+    	margin-bottom: 40px;
+		}
+	}
+	.bg-progressbar {
+    background: #cdcdcd;
+	}
+	.progress-bar {
+    background-color: #c6c6c6;
+	}
+}
+//.section-2 end

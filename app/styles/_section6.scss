@@ -1,0 +1,20 @@
+//section-6
+.section-6 {
+  padding: 70px;
+  background: $black;
+  h3 {
+    color: $white;
+    margin-bottom: 25px;
+    font-size: $fontSize18;
+    letter-spacing: $letter-spacing;
+	}
+	.btn {
+    padding: 15px 40px;
+    background-color: #cfcfcf;
+    color: $black;
+    letter-spacing: 5px;
+    outline: none;
+    border-radius: 5px;
+	}
+}
+//.section-6 end

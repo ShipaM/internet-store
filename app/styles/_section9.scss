@@ -1,0 +1,111 @@
+//section-9
+.section-9 {
+  padding: 140px 0;
+  .item {
+		img {
+    	width: 100%;
+		}
+	}
+	.img-wrap{
+		&__hover {
+    	top: 0;
+    	z-index: -1;
+    	-webkit-transition: all 0.5s;
+    	-moz-transition: all 0.5s;
+    	-ms-transition: all 0.5s;
+    	-o-transition: all 0.5s;
+    	transition: all 0.5s;
+		}
+		&:hover {
+			.img-wrap__hover {
+				z-index: 1;
+			}
+		}
+	}
+	h3 {
+		font-size: $fontSize18;
+    letter-spacing: $letter-spacing;
+    color: $black;
+	}
+	div {
+		&.row{
+	 		&:first-child {
+	 			margin-bottom: 80px;
+			}
+		}
+	}
+	.row{
+		&:first-child {
+			a {
+				font-size: 11px;
+  			letter-spacing: 5px;
+  			font-family: $fontFamilyDosisregular;
+  			color: $graywhite;
+			}  
+		}
+	}
+	.item {
+		h4 {
+  		font-size: 15px;
+  		letter-spacing: 5px;
+  		margin: 30px 0 15px;
+  		color: $gray;
+  		font-family: $fontFamilyDosisregular;
+		}
+		h5 {
+    	font-size: 11px;
+    	color: $graywhite;
+    	letter-spacing: 5px;
+    	margin-bottom: 30px;
+		}
+		p {
+    	font-size: 15px;
+    	color: $gray;
+    	line-height: 1.7;
+		}
+	}
+	.btn {
+    background: #e5e5e5;
+    color: $gray;
+    font-size: 11px;
+    border: none;
+	}
+	.item {
+    height: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: column;
+    -ms-align-items: start;
+    align-items: flex-start;
+		h4 {
+    	flex-grow: 1;
+		}
+	}
+}
+/*эффект при наведении вначале даем элементу z-index: -1; 
+а элементу на который наводим z-index: 1; */
+
+/*эффект при наведении вначале даем элементу visibility: hidden; 
+а элементу на который наводим visibility: visible;
+.section-9 .img-wrap .img-wrap__hover {
+    top: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.section-9 .img-wrap:hover .img-wrap__hover {
+    visibility: visible;
+}
+*/
+//.section-9 end

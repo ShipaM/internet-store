@@ -1,0 +1,38 @@
+//.section-4
+.section-4 {
+  background-color: $black;
+  padding: 0 20px;
+  &__wrap {
+    padding: 140px 0px;
+	}
+	h3 {
+  	font-size: 18px;
+  	letter-spacing: 5px;
+  	color: $white;
+  	margin-bottom: 20px;
+  	font-family: $fontFamilyDosislight;
+	}
+	.descr4 {
+    font-size: 15px;
+    color: $white;
+    line-height: 26px;
+    margin-bottom: 39px;
+    font-family: $fontFamilyOpensanslight;
+	}
+	.button {
+    font-size: 14px;
+    color: $black;
+    font-family: $fontFamilyOpensansregular;
+    padding: 15px 40px;
+    background: #cfcfcf;
+    letter-spacing: 6px;
+    border-radius: 2px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+	}
+	img {
+    transform: translateY(-35px);
+	}
+}
+//.section-4 end
