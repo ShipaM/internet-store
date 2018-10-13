@@ -17,7 +17,7 @@ const path = {
         images: 'app/images/**/*'
     },
     build: {
-        scss: 'build/scss/',
+        scss: 'build/styles/',
         html: 'build',
         images: 'build/images/'
     }
@@ -25,12 +25,12 @@ const path = {
 
 
 gulp.task('sass', function () {
- return gulp.src('path.src.styles')
+ return gulp.src(path.src.styles)
   .pipe(sourcemaps.init())
   .pipe(sass().on('error', sass.logError))
   .pipe(minifyCss())
   .pipe(sourcemaps.write())
-  .pipe(gulp.dest('path.build.scss'))
+  .pipe(gulp.dest('build/css'))
   .pipe(reload({stream: true}));
 
 });
@@ -93,7 +93,7 @@ gulp.task('server', function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch('app/components/**/*.', ['html']);
+    gulp.watch('app/components/**/*.html', ['html']);
     gulp.watch('app/styles/**/*.scss', ['sass']);
 });
 
