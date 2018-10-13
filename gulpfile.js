@@ -12,13 +12,13 @@ const sourcemaps = require('gulp-sourcemaps');
 
 const path = {
     src: {
-        html: ['app/components/*.html'],
+        html: ['app/components/**/*.html'],
         styles: ['app/styles/**/*.scss'],
         images: 'app/images/**/*'
     },
     build: {
         scss: 'build/scss/',
-        html: 'build/components/',
+        html: 'build',
         images: 'build/images/'
     }
 };
@@ -93,7 +93,7 @@ gulp.task('server', function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch('app/index.html', ['html']);
+    gulp.watch('app/components/**/*.', ['html']);
     gulp.watch('app/styles/**/*.scss', ['sass']);
 });
 
