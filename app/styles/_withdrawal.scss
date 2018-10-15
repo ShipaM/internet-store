@@ -1,0 +1,133 @@
+$color_1: #b0bec5;
+$color_2: #343f45;
+$color_3: black;
+$color_4: white;
+$color_5: green;
+$color_6: #8bc34a;
+
+.wd-section {
+	background: #f4f6f5;
+	padding-top: 50px;
+	padding-bottom: 145px;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1170px;
+	display: flex;
+}
+.home-color {
+	color: $color_1;
+	font-size: 15px;
+}
+.wd-color {
+	color: $color_2;
+	font-size: 15px;
+}
+.top-side {
+	margin-bottom: 35px;
+}
+.left {
+	display: flex;
+	flex-direction: column;
+	background: white;
+	margin-right: 30px;
+	border: 1px solid #dedede;
+	width: 50%;
+}
+form {
+	display: flex;
+	flex-direction: column;
+}
+.form-box {
+	input {
+		width: 80%;
+		padding: 10px;
+		background: #f9f9f9;
+		margin: 35px;
+		border: 1px solid #dedede;
+	}
+	p {
+		margin-left: 35px;
+		font-size: 16px;
+		color: $color_3;
+		font-weight: bold;
+	}
+}
+select {
+	width: 84%;
+	padding: 10px;
+	background: #f9f9f9;
+	margin: 35px;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 1px solid #dedede;
+}
+button {
+	width: 200px;
+	height: 50px;
+	background: #8bc34a;
+	color: $color_4;
+	margin: 0 0 50px 35px;
+	font-size: 16px;
+}
+.head {
+	border-bottom: 1px solid #dedede;
+	margin-bottom: 30px;
+	h2 {
+		font-size: 24px;
+		font-weight: bold;
+		margin: 25px 35px;
+	}
+}
+.star {
+	color: $color_5;
+	font-size: 17px;
+	margin-left: 10px;
+}
+.right {
+	width: 50%;
+	background: white;
+	border: 1px solid #dedede;
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+}
+option {
+	&:first {
+		display: none;
+	}
+}
+.head-2 {
+	border-bottom: 1px solid #dedede;
+	h2 {
+		font-size: 24px;
+		font-weight: bold;
+		margin: 25px 35px;
+	}
+}
+.pending {
+	display: flex;
+	background: #f9f9f9;
+}
+.paid {
+	display: flex;
+	background: #f9f9f9;
+}
+.approved {
+	color: $color_6;
+}
+.ammount {
+	font-weight: bold;
+}
+.transactions {
+	font-size: 13px;
+	padding: 35px;
+	p {
+		padding: 15px 25px;
+	}
+}
+.white-bg {
+	background: white;
+}

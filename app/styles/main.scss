@@ -1,6 +1,8 @@
 @import "reset.scss";
 @import "variables.scss";
-@import "media.scss";// всегда в конце
+@import "withdrawal.scss";
+@import "../fonts/f-awesome/scss/font-awesome.scss";
+@import "media.scss"; // всегда в конце
 a {
 	text-decoration: none;
 	
