@@ -14,11 +14,13 @@ const path = {
     src: {
         html: ['app/components/**/*.html'],
         styles: ['app/styles/**/*.scss'],
+        fonts: ['app/fonts/**/*'],
         images: 'app/images/**/*'
     },
     build: {
         scss: 'build/styles/',
         html: 'build',
+        fonts: 'build/fonts',
         images: 'build/images/'
     }
 };
@@ -74,7 +76,8 @@ gulp.task('build', shell.task([
     'gulp clean',
     'gulp images',
     'gulp html',
-    'gulp sass',
+    'gulp fonts',
+    'gulp sass'
     ]) 
 );
 
@@ -98,3 +101,8 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['server']);
+
+gulp.task('fonts',function() {
+    return gulp.src(path.src.fonts)
+    .pipe(gulp.dest(path.build.fonts));
+});
