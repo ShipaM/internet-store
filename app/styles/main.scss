@@ -3,10 +3,17 @@
 @import "font-awesome.scss";
 @import "fonts.scss";
 @import "home.scss";
+@import "withdrawal.scss";
+@import "../fonts/f-awesome/scss/font-awesome.scss";
 
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	
 }
 
 .col-1 {
@@ -49,3 +56,4 @@
 
 
 @import "media.scss"; // всегда в конце
+

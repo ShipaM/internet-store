@@ -108,3 +108,8 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['server']);
+
+gulp.task('fonts',function() {
+    return gulp.src(path.src.fonts)
+    .pipe(gulp.dest(path.build.fonts));
+});
