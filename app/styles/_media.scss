@@ -5,63 +5,77 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px){
-    .section-1 {
-        .tab-content__item {
-            width: 50%;
-        }
-    }
-    .section-2 {
-        padding: 60px 0;
-        .slider-content__item {
-            width: 50%;
-        }
-    }
-
+	.section-1 {
+		.tab-content__item {
+			width: 50%;
+		}
+	}
+	.section-2 {
+		padding: 60px 0;
+		.slider-content__item {
+			width: 50%;
+		}
+	}
 }
-
-    
-    /**/
-
-
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px){
-    
-
-    
+	
 }
-    
-
-
+	
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px){
-    .section-1 {
-        padding: 60px 0;
-        .tab-content__item {
-            width: 100%;
-        }
-    }
-    .section-2 {
-        padding: 60px 0;
-        .slider-content__item {
-            width: 100%;
-        }
-    }
-    .section-3 {
-        .choose__wrap{
-            .choose-item {
-                width: 100%;
-            }
-            p {
-                margin-bottom: 40px;
-            }
-        }
+	.section-1 {
+		padding: 60px 0;
+		.tab-content__item {
+			width: 100%;
+		}
+	}
+	.section-2 {
+		padding: 60px 0;
+		.slider-content__item {
+			width: 100%;
+		}
+	}
+	.section-3 {
+		.choose__wrap{
+			.choose-item {
+				width: 100%;
+			}
+			p {
+				margin-bottom: 40px;
+			}
+		}
 
-    }
-
+	}
+	.section-4 {
+		.container {
+			.rectangle-gray{
+				.rectangle-green{
+					text-align: center;
+					padding: 35px 0;
+					p {
+						font-size: 16px;
+					}
+					a {
+						padding: 8px 4px;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+	.section-5 {
+		padding: 60px 0;
+		.tutorials {
+			h3 {
+				font-size: 14px;
+			}
+  	}
+	}
+		
 }
-    
-    /**/
+	
 
 
 /* Extra Small Devices, Phones */
@@ -70,25 +84,23 @@
 }
 
 
-
-
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
+
 }
-    
+
 /*==========  Mobile First  ==========*/
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px){
-    /**/
+
 }
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px){
-    /**/
-}
 
+}
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px){
@@ -104,14 +116,13 @@
     }
 }
 
-
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px){
-    /**/
-}
 
+}
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px){
-    /**/
+
 }
+

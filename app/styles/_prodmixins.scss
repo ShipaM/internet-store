@@ -1,0 +1,16 @@
+@mixin button ($padding, $bgcolor,$textColor, $text-decoration, $font-size,  ) {
+    padding: $padding;
+    background-color: $bgcolor;
+    text-decoration: $text-decoration;
+    font-size: $font-size;
+    color: $textColor;
+    
+}
+    
+@mixin social ( $textcolor, $bgColor, $font-size, $padding) {
+    
+    color: $textcolor;
+    background-color: $bgColor;
+    font-size: $font-size;
+    padding: $padding;
+}
