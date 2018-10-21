@@ -14,11 +14,13 @@ const path = {
     src: {
         html: ['app/components/**/*.html'],
         styles: ['app/styles/**/*.scss'],
+        fonts: ['app/fonts/**/*'],
         images: 'app/images/**/*'
     },
     build: {
         scss: 'build/styles/',
         html: 'build',
+        fonts: 'build/fonts',
         images: 'build/images/'
     }
 };
@@ -65,6 +67,13 @@ gulp.task('images', function() {
     .pipe(gulp.dest(path.build.images));
 });
 
+/* Создаем таск fonts который, переносит наши файлы со шрифтами в папку продакшена build*/
+gulp.task('fonts', function() {
+  return gulp.src(path.src.fonts)// 1.Берем файлы со шрифтами
+    .pipe(gulp.dest(path.build.fonts));//2.Выгружаем полученный результат в папку fonts
+    // внутри папки build
+});
+
 gulp.task('clean', function() {
     return gulp.src('build')
       .pipe(clean());
@@ -74,7 +83,8 @@ gulp.task('build', shell.task([
     'gulp clean',
     'gulp images',
     'gulp html',
-    'gulp sass',
+    'gulp fonts',
+    'gulp sass'
     ]) 
 );
 

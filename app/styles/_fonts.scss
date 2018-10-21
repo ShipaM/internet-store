@@ -1,0 +1,8 @@
+@import "_mixins/font-face";
+
+@include font-face("RobotoRegular", "../fonts/RobotoRegular/RobotoRegular");
+@include font-face("RobotoBold", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("RobotoMedium", "../fonts/RobotoMedium/RobotoMedium");
+@include font-face("RalewayBold", "../fonts/RalewayBold/RalewayBold");
+@include font-face("LatoSemiBold", "../fonts/LatoSemiBold/LatoSemiBold");
+@include font-face("OpenSansSemiBold", "../fonts/OpenSansSemiBold/OpenSansSemiBold", bold);
