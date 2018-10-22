@@ -1,0 +1,135 @@
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: $fontFamily;
+}
+    @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+    @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+    @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  .footer-color {
+      background-color:#263238 ;
+    }
+
+  .footer01 {
+    display: flex;
+    height: 480px;
+    justify-content: space-around;
+    align-items: center;
+    
+    .box {
+    width: 22.5%;
+    height: 300px;
+    
+        h3 {
+           color:#fff;
+           font-size: 24px; 
+        }
+        h4 {
+            font-size: 42px;
+            color:#8bc34a;
+            padding-bottom: 10px;
+            
+        }
+        p {
+            font-size: 13px; 
+            color:#b0bcc1;
+            padding-bottom: 20px;
+            font-weight: lighter;
+            line-height: 20px;
+        }
+        li {
+            padding-bottom: 20px;
+        }
+        a {
+            color:#b0bcc1;
+            font-size: 13px;
+            
+            i {
+                color: #8bc34a;
+                padding-right: 20px;
+                font-weight: lighter;
+    
+            }
+        }
+        
+        .acell {
+            display: flex;
+
+            p {
+                color: #fff;
+                font-size: 12px;
+                font-weight: lighter;
+                margin-left: 10px;
+            }
+        }
+
+        .s_icons ul {
+            display: flex;
+            padding-bottom: 25px;
+
+            li {
+                padding: 5px;
+            }
+        }
+
+    }
+    form {
+        position: relative;
+      
+      input {
+        width: 220px;
+        height: 40px;
+        padding-left: 10px;
+        border: none;
+        outline: none;
+        background:#2f3c43;
+        color: #9E9C9C;
+      }
+      button {
+        position: absolute; 
+        top: 0;
+        right: 0px;
+        width: 39px;
+        height: 39px;
+        border: none;
+        background:#8bc34a;
+        cursor: pointer;
+      }
+      button:before {
+        font-size: 16px;
+        color: #F9F0DA;
+      }
+    }
+}
+    
+
+
+    .footer02 {
+        border-top: 0.1px solid #b0bcc1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        background-color:#263238;
+        
+        p {
+            font-family: $fontFamily;
+            font-size: 12px;
+            color:#b0bcc1;
+        }
+    }
