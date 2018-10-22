@@ -86,7 +86,12 @@
         
         .nav-menu {
             display: flex;
+            &__link {
 
+              &.active {
+                color: $green;
+              }
+            }
             .nav-menu_item {
                 padding-right: 30px;
                 margin-top: 20px;
@@ -94,6 +99,9 @@
                 a {
                     color:#fff;
                     font-size: 14px;
+                    &.active {
+                     color:#fff; 
+                    }
                 }
             }
         }
